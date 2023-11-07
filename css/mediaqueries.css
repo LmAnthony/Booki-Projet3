@@ -1,0 +1,370 @@
+/* ******************* MEDIAQUERIES ******************* */
+@media (min-width: 1440px) {
+    body{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+/* **************** TABLETTE <992px  **************** */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Filtres */
+    .filter {
+        flex-wrap: nowrap;
+    }
+    /* Les hébergements */  
+    .CardsRow {
+        flex-direction: column;
+    }
+    /* "Hébergements à Marseille" section */
+    .Firstcards{
+        margin-bottom: 3.5em;
+        max-width: 100%;
+        padding: 0;
+    }
+    .card{
+        float: left;
+    }
+    /* "Les plus populaires" section */
+    .Secondcards{
+        margin-left: 0;
+    }
+    .SecondAllcards{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .cardSecond{
+        margin-bottom: 2em;
+        max-width: 255px;
+    }
+    .cardSecondWidth{
+        width: 29%;
+    }
+    .SecondCardsContent{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .cardSecond img{
+        height: 144px;
+    }
+    .cardSecond{
+        padding-right: 0.5em;
+    }
+    .SecondCardsContent h2{
+        font-size: 14px;
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .SecondCardsContent p{
+        font-size: 13px;
+        margin: 0;
+    }
+    /* ** Four cards "Activités à Marseille" ** */
+    .FourCardsTitle{
+        margin-left: 0.4em;
+    }
+    .styleCard img{
+        width: 100%;
+        height: 211px;
+        object-fit: cover;
+    }
+    .styleCard{
+        width: 23%;
+        height: auto;
+    }
+    footer{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 2em;
+    }
+    .footerContent{
+        margin: 0;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+    }
+    .footerContent p{
+        line-height: 2px;
+    }
+/* Modifications de la partie "Filtres", contenu au centre  */
+    /* Modifications positions des filtres */
+    .filter a{
+        justify-content: center;
+        margin: 0.5em;
+        width: 22%;
+    }
+    .filter a i{
+        margin-left: 0.6em;
+    }
+    .filter a p{
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+    }
+}
+/* **************** MOBILE <768px **************** */
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+    }
+    /* Header 100% de la page */
+    .RowHeader{
+        width: 100%;
+    }
+    /* Centrer le header */
+    .RowHeader{
+        justify-content: center;
+    }
+    /* Modif margin gauche de la barre de recherche */
+    .Rechercher{
+        margin-left: 1em;
+    }
+    .Rechercher{
+        margin-top: 2.2em;
+    }
+    /* Faire disparaitre le span "Rechercher" bouton bleu pour le remplacer par une loupe */
+    .Rechercher button span{
+        display: none;
+    }
+    /* Faire apparaitre l'icon fontawesome à la place de "Rechercher" dans le bouton bleu. */
+    .Rechercher button i{
+        display: block;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    /* Barre de recherche "Marseille, France" padding */
+    .Rechercher input{
+        padding-right: 2.5em;
+    }
+    /* Icone GPS modification du padding */
+    .iGPS{
+        padding: 1em;
+    }
+    /* Retour à la ligne des filtres */
+    .filter {
+        flex-wrap: wrap;
+    }
+    /* Titre "Filtres" sur une ligne (100%) */
+    .filter h2{
+        width: 100%;
+    }
+    /* WRAP les filtres et mettre le titre: "Filtres" sur une seule ligne. */
+    .filter{
+        flex-wrap: wrap;
+    }
+    .filter h2{
+        width: 100%;
+    }
+    /* Pour chaque filtre, modif des margins */
+    .search-box{
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    /* Items de la nav 0 padding */
+    .itemsHeader a{
+        padding: 0;
+    }
+    .mLeft{
+        margin-left: 1em;
+    }
+    .top{
+        margin-top: 1.8em;
+        width: 82%;
+    }
+    .left{
+        margin-left: 1.4em;
+    }
+    .filter h2{
+        margin-left: 0.4em;
+        margin-bottom: 0;
+    }
+    .search-box{
+        width: 45%;
+        margin-top: 1em;
+    }
+    .search-btn i{
+        margin-right: 0.4em;
+        margin-left: 0.6em;
+    }
+    .search-box p{
+        font-size: 11px;
+    }
+    .RowDirection{
+        margin: 1.5em;
+    }
+    .CardsRow{
+        flex-direction: column-reverse;
+    }
+    .FirstAllcards{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+    .card{
+        margin-right: 1em;
+        margin-left: 0.5em;
+        margin-top: 0;
+        width: 93%;
+    }
+    #CardsTitle{
+        text-align: left;
+        margin-left: 1em;
+    }
+    .card img{
+        width: 100%;
+    }
+    .Firstcards{
+        background: white;  
+        padding: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+    #SecondTitle{
+        margin-left: 1em;
+    }
+    .Secondcards{
+        border-radius: 0;
+        padding-bottom: 3em;
+        margin-left: 0;
+    }
+    .cardSecond{
+        max-width: 100%;
+        margin: 0;
+    }
+    .cardSecondWidth{
+        width: 93%;
+    }
+    .cardSecond h2{
+        font-size: 16px;
+    }
+    .cardSecond p{
+        font-size: 14px;
+    }
+    .cardSecond img{
+        width: 100%;
+        height: 144px;
+    }
+    .SecondAllcards{
+        flex-direction: column;
+        margin: 0;
+    }
+    /* Margin sur les seconds cards "Les plus populaires" */
+    .SecondAllcards a:nth-child(even){
+        margin: 1em;
+        margin-right: 1.5em;
+    }
+    .SecondAllcards a:nth-child(odd){
+        margin: 1em;
+        margin-right: 1.5em;
+    }
+    .SecondAllcards a{
+        margin-top: 0!important;
+    }
+    #Afficher{
+        display: none;
+    }
+    .RowFourCards{
+        justify-content: center;
+    }
+    /* Premier titre des 4 cards positionnement */
+    .FourCardsContent h2:first-child{
+        margin-left: 1.5em;
+        margin-top: 4em;
+        font-size: 22px;
+        width: 30%;
+        margin-bottom: 0.2em;
+    }
+    /* Style des 4 cards */
+    .styleCard{
+        width: 100%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 0;
+        margin-bottom: 1.8em;
+    }
+    .styleCard img{
+        height: 170px;
+    }
+    /* Footer in column */
+    footer{
+        flex-direction: column;
+    }
+    .footerContent{
+        margin-left: 1.5em;
+    }
+    .footerContent:first-child {
+        margin-left: 1.5em;
+    }
+    .itemsHeader{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .itemsHeader a{
+        width: 100%;
+        text-align: center;
+    }
+    .flexImg img{
+        margin-left: 20px;
+    }
+    /* Petite barre bleu au top en hover */
+    .styleHeaderButton:hover::before{
+        top: 97%;
+    }
+    /* Petite barre grise au top en hover */
+    .styleHeaderButton::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #F2F2F2;
+    }
+    .styleHeaderButton{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .Rechercher{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .FourCardsContent h2:first-child {
+        width: 35%;
+    }
+    .search-box p {
+        margin-right: 0.2em;
+        font-size: 10.5px;
+    }
+    .cardSecond img {
+        width: 39%;
+    }
+    .FourCardsContent h2:first-child {
+        width: 50%;
+    }
+    /* ****** BOUTON RECHERCHER ****** */
+    .Rechercher{
+        margin-left: 0.5em;
+    }
+    .iGPS{
+        padding: 0.9em;
+    }
+    .search-btn i {
+        margin-right: 0.6em;
+        margin-left: 0.6em;
+    }
+    .Rechercher input {
+        padding-right: 1em;
+    }
+    .Rechercher button i{
+        margin-right: 0.6em;
+        margin-left: 0.5em;
+    }
+    #CardsTitle, #SecondTitle{
+        font-size: 20px;
+    }
+}
